@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+#percent {
+    position: fixed;
+    top: 50%;
+    transform:  translateY(-50%);
+    right: 15px;
+    color: yellow;
+    font-size: 2em;
+}
+
+.seccion{
+    padding: 100px;
+    text-align: center;
+}
+
+#barraAumento{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    width: 2%;
+    height: 100%;
+    background-color: red ;
+}
+
+#termometro{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

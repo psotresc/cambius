@@ -5,8 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Migración de los árboles</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/d3anim.js"></script>
 </head>
 <body>
-    
-</body>
+    <img id='termometro' src="images/termometro.png" alt="">
+    <div id='barraAumento'></div>
+    <div id='scrollPath'></div>
+    <div id="percent"></div>
+    <div class="seccion">
+
+        <h1> Migración de los árboles</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus quam id nisi lobortis efficitur. Nulla ac quam turpis. Nunc pharetra, massa sed semper convallis, libero nibh ultrices mi, viverra aliquet dolor magna quis nunc. Morbi at odio tellus. Vivamus est est, sodales congue dolor et, scelerisque euismod mauris. Nulla imperdiet ultrices aliquam. Nulla facilisi. Nunc placerat tempor justo in scelerisque. Suspendisse erat libero, mattis vel porta id, vehicula quis quam. Suspendisse potenti. Morbi non aliquam elit. Donec sodales erat purus, sit amet tempor tellus consectetur ullamcorper. Nulla vestibulum sem nulla. Ut sit amet sagittis metus, eu dignissim tortor. Fusce pharetra gravida leo sed rutrum. Vestibulum eros enim, molestie at neque porttitor, elementum scelerisque neque.
+            <br>
+            <br>
+            <img src="https://picsum.photos/300/200" alt="">
+            <br>
+            Duis a ipsum viverra, posuere ante quis, volutpat nulla. Integer sem massa, gravida a consectetur a, molestie a eros. Ut eu sem ut risus interdum volutpat. Duis in ultricies metus. Nam venenatis pellentesque risus, vel volutpat tellus. Donec vel augue vulputate, dapibus sapien nec, placerat metus. Nam non feugiat augue. Aliquam erat volutpat. Fusce facilisis luctus massa, id tincidunt turpis pulvinar sed. Vivamus blandit feugiat felis. Maecenas et odio at odio auctor ultrices id ut mauris. Integer faucibus, sapien eget placerat euismod, tellus ipsum laoreet nulla, et pellentesque ipsum sapien in ante. Maecenas tempus nisi mi, id lacinia odio mollis eget. Etiam tincidunt turpis a justo sodales elementum.
+            <br>
+            <br>
+            Aenean ac pellentesque velit. Integer elit eros, tempus et accumsan eu, lobortis ac erat. Mauris mi lorem, vehicula at enim eget, dictum rutrum neque. Vestibulum aliquet dui molestie, luctus massa vitae, aliquet massa. Pellentesque ut nisl egestas, tincidunt nibh sagittis, scelerisque libero. Aliquam velit ex, congue vel tortor ac, semper ornare erat. Integer fermentum leo vitae quam hendrerit maximus. Mauris sagittis dignissim quam, in rutrum nisi maximus sit amet. Nam vitae purus id elit eleifend fermentum ac eget nisi. Praesent diam lacus, blandit vitae sapien a, sodales consequat massa. Sed sodales enim non lectus interdum, ac consectetur erat mollis. Vestibulum rhoncus aliquet augue eget feugiat.
+            <br>
+            <br>
+            In molestie sapien nec nunc gravida, id faucibus dolor varius. Nunc leo orci, dignissim non porttitor vitae, laoreet in nulla. Ut vitae purus tortor. Nam eleifend risus at suscipit maximus. Fusce vulputate, odio sed dapibus luctus, lacus sapien suscipit massa, at vestibulum orci elit id lectus. Proin auctor commodo urna. Donec viverra massa et velit pulvinar tempus. Donec commodo finibus dolor, non rhoncus lorem. Nullam tortor dui, condimentum at libero eu, aliquet elementum tellus. Donec lobortis et nulla vel feugiat. Suspendisse fringilla nisl mauris, eget elementum ipsum accumsan sed. Suspendisse potenti. Nullam sollicitudin consectetur justo in fringilla. Aliquam vitae lectus eu mi maximus pharetra vitae a lacus. Nulla facilisi. Quisque sed interdum ex.
+            <br>
+            <br>
+            <img src="https://picsum.photos/301/201" alt="">
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue nibh, hendrerit eu arcu et, ornare convallis ipsum. Maecenas a blandit lectus, sed tincidunt neque. Morbi efficitur non eros tempor tincidunt. Integer cursus metus tristique sem porttitor, vitae dignissim odio malesuada. Donec ultrices metus ac augue eleifend, eu efficitur magna elementum. Donec et tincidunt lacus, ac hendrerit ipsum. Nunc viverra lobortis ligula, vel congue quam convallis sed. Sed a consectetur eros. Donec condimentum nec neque sit amet maximus. Etiam nisl arcu, pellentesque non ornare sed, luctus accumsan nisi. Proin maximus est sed velit ullamcorper egestas. Etiam facilisis lorem leo, quis lobortis libero sollicitudin vitae.
+            <br>
+            <br>
+            Integer sapien enim, porttitor vestibulum tempus a, molestie in urna. Mauris sit amet nunc justo. Morbi turpis nibh, auctor ac rutrum pretium, elementum quis nibh. Nullam ut egestas lacus, ac iaculis lectus. Sed vehicula et lectus et suscipit. Donec tristique condimentum egestas. Ut rhoncus tellus et ligula pharetra, sit amet sodales urna hendrerit. Suspendisse a rutrum odio, ut semper ligula.
+            <br>
+            <br>
+            Nunc id accumsan massa, at luctus tellus. Sed aliquet tellus tortor, sit amet tempor tellus gravida consequat. Duis et purus a lorem rutrum eleifend. Sed consectetur elit id mollis porta. Donec eu semper eros. Quisque condimentum, felis in tempus interdum, neque justo imperdiet nulla, nec hendrerit nisl arcu sit amet arcu. Nulla suscipit nisl vel est lacinia commodo. Nulla facilisi. Donec nisi neque, condimentum vitae tristique sit amet, interdum eu mi. Aliquam facilisis id odio in ultricies.
+            <br>
+            <br>
+            <img src="https://picsum.photos/301/200" alt="">
+            <br>
+            Ut eros leo, varius vel rutrum nec, gravida nec nisi. Donec pulvinar nibh id ex auctor volutpat. Maecenas lorem mauris, porttitor quis purus in, hendrerit mollis odio. Ut eu magna hendrerit, dapibus nisl id, vestibulum dolor. Nunc consectetur tristique auctor. In interdum eros et vulputate hendrerit. Pellentesque a lacinia ligula. Duis ut nisl non nisi malesuada ultricies. Nam vitae aliquam sem.
+            <br>
+            <br>
+            In hac habitasse platea dictumst. Suspendisse blandit, lorem in ullamcorper efficitur, nisl turpis posuere tortor, at mollis velit tortor et metus. Proin quis arcu sem. Nunc tempor, nunc sed semper pretium, purus augue lobortis augue, ut sodales odio mauris sit amet dolor. Etiam vitae est vitae mi tempor faucibus sit amet eu odio. Aenean non augue vel tortor tempor dignissim in eget massa. Phasellus a erat eu eros consectetur dictum vitae viverra est. Vestibulum at lacus quis mauris sodales lobortis nec ac mauris. Etiam vel lectus est. Morbi varius sapien sapien, at suscipit turpis sollicitudin et. Proin scelerisque lectus sed mauris pulvinar, rhoncus commodo lacus suscipit. Nunc luctus convallis nulla, sagittis dictum arcu mollis sit amet. Mauris aliquet elit ultrices sem accumsan rhoncus. Nullam feugiat, nulla dignissim vestibulum mollis, purus lacus lobortis lectus, non placerat odio ante id nisi. Maecenas eu sapien bibendum, sodales risus in, consectetur orci. Sed suscipit nisi nec nunc laoreet pretium.
+            <br>
+            <br>
+            Suspendisse potenti. Duis quis condimentum justo, eu volutpat nisi. Praesent in congue sapien. Ut rhoncus purus quis risus iaculis, nec iaculis urna bibendum. Nulla id tellus erat. Maecenas sollicitudin, tellus eget congue commodo, tellus turpis pulvinar ipsum, at sodales nisi felis ac est. Nulla metus lorem, bibendum sed enim vel, pulvinar hendrerit neque. Vestibulum est magna, vulputate sit amet metus ut, malesuada dictum est. In ornare erat lectus, at fermentum ex volutpat id. Pellentesque in eros fringilla, laoreet nibh at, faucibus dolor. Nam tincidunt est vel odio tempor ornare. Proin tellus mauris, convallis ut laoreet in, euismod a elit. Integer felis felis, accumsan id egestas ac, tincidunt sed nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        </div>
+    </body>
 </html>
